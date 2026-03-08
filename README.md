@@ -67,13 +67,11 @@ sudo $(which python3) main_hikvision.py
 
 ### Paso 1 — Agregar el Alarm Server
 
-Entra a la interfaz web de la cámara y navega a:
+Entra a la interfaz web de la cámara y en la barra lateral (Para interfaces nuevas) navega a:
 
 ```
-Configuration → Network → Advanced Settings → HTTP Listening
+VCA (Icono de varias figuras formado un cuadrado) → Evento Smart → Configuración general → Servidor de alarmas
 ```
-
-> En algunos firmwares aparece como **"Servidor de alarmas"**
 
 Haz clic en **+ Añade** y llena los campos:
 
@@ -87,17 +85,6 @@ Haz clic en **+ Añade** y llena los campos:
 
 ![Configuración Alarm Server Hikvision](docs/hikvision_alarm_server_config.png)
 
-### Paso 2 — Activar "Notify Surveillance Center" en los eventos
-
-En cada tipo de evento que quieras capturar (Motion, Intrusión, Línea cruzada), ve a **Linkage Method** y activa:
-
-- ✅ **Notify Surveillance Center**
-- ✅ **Capture** (para adjuntar imagen)
-
-```
-Configuration → Event → Smart Event → Detección de intrusiones
-→ Ajustes de reglas → Calendario de armado → Linkage Method
-```
 
 ---
 
